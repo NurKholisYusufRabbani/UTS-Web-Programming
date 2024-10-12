@@ -136,6 +136,18 @@ h2 {
     color: #555;
 }
 
+.contact-item .fa-linkedin {
+    color: #0A66C2; /* Warna LinkedIn */
+  }
+  
+  .contact-item .fa-github {
+    color: #333; /* Warna GitHub */
+  }
+  
+  .contact-item .fa-envelope {
+    color: #D44638; /* Warna Gmail */
+  }
+  
 footer {
     text-align: center;
     padding: 5px;
