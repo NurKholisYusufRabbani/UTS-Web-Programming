@@ -37,21 +37,22 @@ header h1 {
     background-color: #21455a;
 }
 
-nav {
-    display: flex;
-    justify-content: center; 
-    margin-top: 1rem;
+.home-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #005f73; 
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 10 15px; 
-}
-
-nav a:hover {
-    text-decoration: underline;
-    opacity: 0.8;
+.home-icon:hover {
+    background-color: #0a9396;
+    transform: scale(1.1);
 }
 
 section {
