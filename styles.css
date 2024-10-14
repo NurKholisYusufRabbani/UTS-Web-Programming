@@ -137,15 +137,15 @@ h2 {
 }
 
 .contact-item .fa-linkedin {
-    color: #0A66C2; /* Warna LinkedIn */
+    color: #0A66C2;
   }
   
   .contact-item .fa-github {
-    color: #333; /* Warna GitHub */
+    color: #333;
   }
   
   .contact-item .fa-envelope {
-    color: #D44638; /* Warna Gmail */
+    color: #D44638;
   }
   
 footer {
@@ -156,4 +156,18 @@ footer {
     width: 100%;
     margin-top: auto;
     font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .home-icon {
+      font-size: 1.5rem; 
+      padding: 6px;
+      top: 5px;
+      left: 5px;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+    }
 }
