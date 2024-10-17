@@ -55,6 +55,125 @@ header h1 {
     transform: scale(1.1);
 }
 
+.switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 34px;
+}
+  
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;  
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    transition: opacity 0.3s;
+    color: #333;
+}
+
+.sun {
+    left: 8px;
+    opacity: 1;
+}
+
+.moon {
+    right: 8px;
+    opacity: 0;
+}
+
+input:checked + .slider {
+    background-color: #0a6568;
+}
+
+input:checked + .slider .sun {
+    opacity: 0;
+}
+
+input:checked + .slider .moon {
+    opacity: 1;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+body.dark-mode .slider {
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode input:checked + .slider {
+    background-color: #007f7f;
+}
+
+body.dark-mode .slider:before {
+    background-color: #f0f0f0;
+}
+  
+body.dark-mode {
+    background: #1a1a1a;
+    color: #f4f4f4;
+}
+
+body.dark-mode h2, 
+body.dark-mode footer,
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode li,
+body.dark-mode a {
+    color: white;
+}
+
+header.dark-mode {
+    background-color: #004f63;
+}
+
+section.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+footer.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+body.dark-mode .portfolio-item {
+    background-color: rgba(50, 50, 50, 0.9); 
+}
+
 section {
     padding: 20px;
     margin: 20px auto; 
@@ -65,6 +184,11 @@ section {
     max-width: 1200px; 
     width: 100%; 
     box-sizing: border-box; 
+}
+
+body.dark-mode section {
+    background-color: #1f1f1f;
+    color: white;
 }
 
 section:nth-child(even) {
@@ -92,9 +216,10 @@ h2 {
 .choice {
     display: flex;
     justify-content: center;
-    gap: 100px; 
+    gap: 100px;
     flex-wrap: wrap;
     margin-top: 50px;
+    align-items: center;
 }
 
 .portfolio-item {
@@ -109,11 +234,12 @@ h2 {
     padding: 20px;
     transition: transform 0.3s, box-shadow 0.3s;
     text-decoration: none;
-    color: inherit; 
+    color: inherit;
 }
 
 .portfolio-item:hover{
-    transform: scale(1.05);
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .profile-pic {
@@ -138,15 +264,36 @@ h2 {
 
 .contact-item .fa-linkedin {
     color: #0A66C2;
-  }
+}
   
   .contact-item .fa-github {
     color: #333;
-  }
+}
   
   .contact-item .fa-envelope {
     color: #D44638;
-  }
+}
+
+.scrollToTopBtn {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: #949494;
+    color: white;
+    border: none;
+    border-radius: 10%;
+    padding: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.scrollToTopBtn:hover {
+    background-color: #0a9396;
+    transform: scale(1.1);
+}
   
 footer {
     text-align: center;
@@ -160,14 +307,51 @@ footer {
 
 @media (max-width: 768px) {
     .home-icon {
-      font-size: 1.5rem; 
-      padding: 6px;
-      top: 5px;
-      left: 5px;
+        font-size: 1.5rem; 
+        padding: 6px;
+        top: 10px;
+        left: 10px;
     }
 
     h1 {
         font-size: 1.4rem;
         margin-bottom: 0.5rem;
     }
+
+    .switch {
+        width: 31px;
+        height: 16px;
+        top: 15px;
+        right: 5px;
+    }
+
+    .slider {
+        border-radius: 12px;
+    }
+
+    .slider:before {
+        height: 14px; 
+        width: 14px;
+        bottom: 1.5px;
+        left: 2px;
+    }
+
+    .icon {
+        font-size: 10px;
+    }
+
+    .sun {
+        left: 4px;
+        top: 8px;
+    }
+
+    .moon {
+        right: 2px;
+        top: 8px;
+    }
+
+    input:checked + .slider:before {
+        transform: translateX(14px);
+    }
+    
 }
