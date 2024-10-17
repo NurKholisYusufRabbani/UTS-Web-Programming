@@ -19,20 +19,18 @@ document.addEventListener("DOMContentLoaded", function() {
       }
   });
 
-  // Ketika pengguna menggulir ke bawah, tampilkan tombol
   window.onscroll = function() {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          scrollToTopBtn.style.display = "block"; // Tampilkan tombol
+          scrollToTopBtn.style.display = "block";
       } else {
-          scrollToTopBtn.style.display = "none"; // Sembunyikan tombol
+          scrollToTopBtn.style.display = "none";
       }
   };
 
-  // Ketika tombol diklik, gulir kembali ke atas
   scrollToTopBtn.addEventListener("click", function() {
       window.scrollTo({
           top: 0,
-          behavior: "smooth" // Gulir dengan halus
+          behavior: "smooth"
       });
   });
 });
