@@ -22,5 +22,5 @@ Proyek ini dapat diakses secara online di [GitHub Pages](https://nurkholisyusufr
 
 Proyek ini dibuat oleh **Nurkholis Yusuf Rabbani** dan **Ivan Budi Saputra**. Terima kasih kepada semua yang telah membantu dalam pengembangan proyek ini. Jika Anda memiliki pertanyaan atau masukan, silakan hubungi kami melalui:
 
-- [LinkedIn Nurkholis Yusuf Rabbani](https://www.linkedin.com/in/nurkholisyusufrabbani/)
+- [LinkedIn Nurkholis Yusuf Rabbani](https://www.linkedin.com/in/nur-kholis-yusuf-rabbani/)
 - [Email Ivan Budi Saputra](mailto:ivanbudi1234@gmail.com)
