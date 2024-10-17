@@ -10,7 +10,7 @@ Selamat datang di proyek **UTS Web Programming**. Proyek ini merupakan hasil dar
 
 ## Cara Menjalankan Proyek
 
-Proyek ini dapat diakses secara online di [GitHub Pages](https://nurkholisyusufrabbani.github.io/UTS-Web-Programming/).
+Proyek ini dapat diakses secara online di [GitHub Pages](https://nurkholisyusufrabbani.github.io/UTS-Web-Programming/){:target="_blank"}.
 
 ## Teknologi yang Digunakan
 
