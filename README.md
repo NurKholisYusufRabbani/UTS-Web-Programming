@@ -18,10 +18,9 @@ Proyek ini dapat diakses secara online di [GitHub Pages](https://nurkholisyusufr
 - CSS
 - JavaScript
 
-## Lisensi
+## Credits
 
-Proyek ini dilisensikan di bawah **MIT License**. Lihat berkas [LICENSE](LICENSE) untuk informasi lebih lanjut.
+Proyek ini dibuat oleh **Nurkholis Yusuf Rabbani** dan **Ivan Budi Saputra**. Terima kasih kepada semua yang telah membantu dalam pengembangan proyek ini. Jika Anda memiliki pertanyaan atau masukan, silakan hubungi kami melalui:
 
-## Penulis
-
-Proyek ini dibuat oleh **Nurkholis Yusuf Rabbani** dan **Ivan Budi Saputra**. Jika Anda memiliki pertanyaan atau masukan, silakan hubungi saya melalui [LinkedIn](https://www.linkedin.com/in/nurkholisyusufrabbani/) atau rekan saya melalui email di [ivanbudi1234@gmail.com](mailto:ivanbudi1234@gmail.com).
+- [LinkedIn Nurkholis Yusuf Rabbani](https://www.linkedin.com/in/nurkholisyusufrabbani/)
+- [Email Ivan Budi Saputra](mailto:ivanbudi1234@gmail.com)
