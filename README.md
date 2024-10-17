@@ -8,9 +8,9 @@ Selamat datang di proyek **UTS Web Programming**. Proyek ini merupakan hasil dar
 - **Tombol "Scroll to Top"**: Memungkinkan pengguna untuk kembali ke atas halaman dengan mudah.
 - **Tata Letak Responsif**: Halaman dirancang untuk tampil dengan baik di berbagai ukuran layar, termasuk desktop dan perangkat seluler.
 
-## Cara Menjalankan Proyek
+## Tampilan Proyek
 
-Proyek ini dapat diakses secara online di <a href="https://nurkholisyusufrabbani.github.io/UTS-Web-Programming/" target="_blank">GitHub Pages</a>.
+Proyek ini dapat diakses secara online di [GitHub Pages](https://nurkholisyusufrabbani.github.io/UTS-Web-Programming/).
 
 ## Teknologi yang Digunakan
 
