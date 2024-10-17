@@ -24,4 +24,4 @@ Proyek ini dilisensikan di bawah **MIT License**. Lihat berkas [LICENSE](LICENSE
 
 ## Penulis
 
-Proyek ini dibuat oleh **Nurkholis Yusuf Rabbani** dan **Ivan Budi Saputra**. Jika Anda memiliki pertanyaan atau masukan, silakan hubungi saya melalui [LinkedIn](https://www.linkedin.com/in/nurkholisyusufrabbani/) atau melalui email di [ivanbudi1234@gmail.com](mailto:ivanbudi1234@gmail.com).
+Proyek ini dibuat oleh **Nurkholis Yusuf Rabbani** dan **Ivan Budi Saputra**. Jika Anda memiliki pertanyaan atau masukan, silakan hubungi saya melalui [LinkedIn](https://www.linkedin.com/in/nurkholisyusufrabbani/) atau rekan saya melalui email di [ivanbudi1234@gmail.com](mailto:ivanbudi1234@gmail.com).
