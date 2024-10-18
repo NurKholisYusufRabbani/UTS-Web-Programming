@@ -11,6 +11,7 @@ body {
     overflow-x: hidden; 
 }
 
+/* Bagian header halaman */
 header {
     background-color: #005f73; 
     color: white;
@@ -24,37 +25,80 @@ header h1 {
     margin: 0;
 }
 
-.button {
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+/* Menu navigasi */
+#nav-menu {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+    width: 170px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+/* Tampilkan menu ketika kelas 'show' ditambahkan */
+#nav-menu.show {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Gaya untuk link menu */
+#nav-menu ul {
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+}
+
+#nav-menu ul li {
+    margin-bottom: 5px;
+}
+
+/* Link dalam menu navigasi */
+#nav-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 500;
     transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
 }
 
-.button:hover {
-    background-color: #21455a;
+/* Gaya hover pada link menu */
+#nav-menu ul li a:hover {
+    background-color: #005f73;
+    color: white;
 }
 
-.home-icon {
+/* Gaya untuk tombol toggle menu */
+#menu-toggle {
     position: absolute;
     top: 20px;
     left: 20px;
-    font-size: 2rem;
-    color: #fff;
-    background-color: #005f73; 
-    padding: 10px;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    background-color: #005f73;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-.home-icon:hover {
-    background-color: #0a9396;
-    transform: scale(1.1);
+/* Hover effect untuk tombol toggle */
+#menu-toggle:hover {
+    background-color: #007f7f;
+    transform: scale(1.05);
 }
 
+/* Gaya untuk switch tema */
 .switch {
     position: absolute;
     top: 20px;
@@ -68,7 +112,8 @@ header h1 {
     width: 0;
     height: 0;  
 }
-  
+
+/* Slider pada switch tema */
 .slider {
     position: absolute;
     cursor: pointer;
@@ -82,6 +127,7 @@ header h1 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+/* Elemen ikon matahari dan bulan di switch */
 .icon {
     position: absolute;
     top: 50%;
@@ -113,6 +159,7 @@ input:checked + .slider .moon {
     opacity: 1;
 }
 
+/* Konten di dalam slider */
 .slider:before {
     position: absolute;
     content: "";
@@ -142,6 +189,7 @@ body.dark-mode .slider:before {
     background-color: #f0f0f0;
 }
   
+/* Mengubah warna untuk tema gelap */
 body.dark-mode {
     background: #1a1a1a;
     color: #f4f4f4;
@@ -174,6 +222,7 @@ body.dark-mode .portfolio-item {
     background-color: rgba(50, 50, 50, 0.9); 
 }
 
+/* Kontainer untuk section di halaman */
 section {
     padding: 20px;
     margin: 20px auto; 
@@ -266,14 +315,15 @@ h2 {
     color: #0A66C2;
 }
   
-  .contact-item .fa-github {
+.contact-item .fa-github {
     color: #333;
 }
   
-  .contact-item .fa-envelope {
+.contact-item .fa-envelope {
     color: #D44638;
 }
 
+/* Tombol scroll ke atas */
 .scrollToTopBtn {
     position: fixed;
     bottom: 15px;
@@ -306,11 +356,24 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .home-icon {
-        font-size: 1.1rem; 
-        padding: 4px;
+    #nav-menu {
         top: 10px;
         left: 10px;
+        width: 70px;
+        padding: 3px;
+    }
+
+    #nav-menu ul li a {
+        padding: 3px 6px;
+        font-size: 11px;
+    }
+
+    /* Gaya untuk tombol toggle menu */
+    #menu-toggle {
+        top: 5px;
+        left: 5px;
+        padding: 4px 6px;
+        font-size: 12px;
     }
 
     h1 {
@@ -353,5 +416,4 @@ footer {
     input:checked + .slider:before {
         transform: translateX(14px);
     }
-    
 }
