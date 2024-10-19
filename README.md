@@ -9,7 +9,7 @@ Struktur HTML di proyek ini diorganisasi dengan rapi menggunakan elemen-elemen s
 - `<header>`: Berisi logo dan navigasi utama.
 - `<nav>`: Navigasi untuk berpindah antara halaman-halaman situs.
 - `<section>`: Bagian utama yang menampilkan konten halaman.
-- `<footer>`: Bagian bawah halaman yang memuat informasi tambahan dan kontak.
+- `<footer>`: Bagian bawah halaman yang memuat informasi tambahan.
 
 ## Desain CSS
 
