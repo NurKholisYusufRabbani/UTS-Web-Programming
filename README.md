@@ -1,6 +1,6 @@
 # UTS Web Programming
 
-Selamat datang di proyek **UTS Web Programming**. Proyek ini merupakan hasil dari tugas akhir pada mata kuliah pemrograman web. Di dalamnya, Anda akan menemukan berbagai fitur menarik dan desain yang responsif.
+Selamat datang di proyek **UTS Web Programming**. Proyek ini merupakan hasil dari UTS pada mata kuliah pemrograman web. Di dalamnya, Anda akan menemukan berbagai fitur menarik dan desain yang responsif.
 
 ## Struktur HTML
 
