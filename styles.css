@@ -376,19 +376,19 @@ footer {
         padding: 4px 6px;
         font-size: 12px;
     }
-
+    /**/
     h1 {
         font-size: 1.4rem;
         margin-bottom: 0.5rem;
     }
-
+    /**/
     .switch {
         width: 31px;
         height: 16px;
         top: 15px;
         right: 5px;
     }
-
+    /**/
     .slider {
         border-radius: 12px;
     }
@@ -399,16 +399,16 @@ footer {
         bottom: 1.5px;
         left: 2px;
     }
-
+    /**/
     .icon {
         font-size: 10px;
     }
-
+    /**/
     .sun {
         left: 4px;
         top: 8px;
     }
-
+    /**/
     .moon {
         right: 2px;
         top: 8px;
