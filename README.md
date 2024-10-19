@@ -8,7 +8,7 @@ Struktur HTML di proyek ini diorganisasi dengan rapi menggunakan elemen-elemen s
 
 - `<header>`: Berisi logo dan navigasi utama.
 - `<nav>`: Navigasi untuk berpindah antara halaman-halaman situs.
-- `<main>`: Bagian utama yang menampilkan konten halaman.
+- `<section>`: Bagian utama yang menampilkan konten halaman.
 - `<footer>`: Bagian bawah halaman yang memuat informasi tambahan dan kontak.
 
 ## Desain CSS
@@ -24,6 +24,7 @@ Proyek ini menggunakan CSS untuk memberikan tampilan yang modern dan responsif. 
 
 - **Light/Dark Mode**: Pengguna dapat beralih antara tema terang dan gelap.
 - **Tombol "Scroll to Top"**: Memungkinkan pengguna untuk kembali ke atas halaman dengan mudah.
+- **Menu Button untuk Navigasi**: Sebuah menu button akan muncul untuk menampilkan atau menyembunyikan navigasi.
 
 ## Tampilan Proyek
 
