@@ -10,16 +10,25 @@
 </head>
 <body>
   <header>
-    <h1>Nur Kholis Yusuf Rabbani Portfolio</h1>
-    <button id="menu-toggle" class="menu-button">Menu</button>
-    <nav id="nav-menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Nur.html">Nur</a></li>
-            <li><a href="Budi.html">Budi</a></li>
-            <li><a href="about.html">About Us</a></li>
-        </ul>
-    </nav>
+    <nav>
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+              <a href="#">Portofolio</a>
+              <ul class="dropdown-content">
+                  <li><a href="Nur.html">Nur</a></li>
+                  <li><a href="Budi.html">Budi</a></li>
+              </ul>
+          </li>
+          <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>  
+    <h1>Portofolio Nur Kholis Yusuf Rabbani</h1>
     <label class="switch">
       <input type="checkbox" id="theme-toggle">
       <span class="slider">
@@ -39,9 +48,9 @@
     <h3>Skills</h3>
     <ul>
       <li>Programming Languages: Python, PHP, C++</li>
-      <li>Frameworks: TensorFlow, Keras, Laravel</li>
+      <li>Frameworks: TensorFlow, Flask, Laravel</li>
       <li>Game Development: Unity3D</li>
-      <li>Technologies: Machine Learning, Basic Cybersecurity, Financial Analysis, Linux, Mikrotik</li>
+      <li>Interests: Machine Learning, Linux, Mikrotik</li>
     </ul>
 
     <h3>Education</h3>

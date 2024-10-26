@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     const toggleSwitch = document.getElementById('theme-toggle');
     const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-    const menuToggle = document.getElementById('menu-toggle');
-    const navMenu = document.getElementById('nav-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navList = document.querySelector('.navbar');
 
     // Saklar tema
     if (toggleSwitch) {
@@ -41,17 +41,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     }
 
-    // Toggle menu navigasi
-    if (menuToggle && navMenu) {
-        menuToggle.addEventListener('click', function() {
-            navMenu.classList.toggle('show');
-        });
-
-        // Menyembunyikan menu jika mengklik di luar menu
-        document.addEventListener('click', function(event) {
-            if (!menuToggle.contains(event.target) && !navMenu.contains(event.target)) {
-                navMenu.classList.remove('show');
-            }
+    // Mobile menu toggle functionality
+    if (mobileMenu && navList) {
+        mobileMenu.addEventListener('click', function() {
+            navList.classList.toggle('show');
         });
     }
 });

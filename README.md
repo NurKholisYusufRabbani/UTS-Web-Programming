@@ -16,15 +16,14 @@ Struktur HTML di proyek ini diorganisasi dengan rapi menggunakan elemen-elemen s
 Proyek ini menggunakan CSS untuk memberikan tampilan yang modern dan responsif. Beberapa teknik CSS yang diterapkan meliputi:
 
 - **Responsif**: Menggunakan media queries untuk memastikan tampilan yang optimal di perangkat desktop maupun mobile.
-- **Flexbox**: Untuk tata letak yang dinamis dan mudah diatur.
-- **Animasi CSS**: Digunakan pada beberapa elemen untuk meningkatkan interaksi pengguna.
 - **Mode Gelap**: Implementasi dark mode menggunakan perubahan CSS berdasarkan preferensi pengguna.
+- **Dropdown**: Digunakan untuk navigasi ke halaman portofolio.
 
 ## Fitur dalam JavaScript
 
 - **Light/Dark Mode**: Pengguna dapat beralih antara tema terang dan gelap.
 - **Tombol "Scroll to Top"**: Memungkinkan pengguna untuk kembali ke atas halaman dengan mudah.
-- **Menu Button untuk Navigasi**: Sebuah menu button akan muncul untuk menampilkan atau menyembunyikan navigasi.
+- **Tombol Burger**: Mengatur agar navbar pada perangkat mobile dapat berjalan dengan baik.
 
 ## Tampilan Proyek
 

@@ -11,93 +11,79 @@ body {
     overflow-x: hidden; 
 }
 
-/* Bagian header halaman */
 header {
-    background-color: #005f73; 
-    color: white;
-    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    background-color: #005f73;
+}
+
+h1 {
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
-    transition: background-color 0.3s; 
+    flex: 1;
+    font-size: 2em;
+    transform: translateX(-137px);
+    color: white;
 }
 
-header h1 {
+/* Style untuk navbar dan dropdown */
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 10px;
     margin: 0;
+    padding: 0;
+    z-index: 5;
+    position: relative;
 }
 
-/* Menu navigasi */
-#nav-menu {
-    display: none;
-    position: absolute;
-    top: 20px;
-    left: 10px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
-    z-index: 100;
-    width: 170px;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    opacity: 0;
-    transform: scale(0.9);
+.navbar li {
+    position: relative;
 }
 
-/* Tampilkan menu ketika kelas 'show' ditambahkan */
-#nav-menu.show {
-    display: block;
-    opacity: 1;
-    transform: scale(1);
-}
-
-/* Gaya untuk link menu */
-#nav-menu ul {
-    list-style-type: none;
-    padding: 5px;
-    margin: 0;
-}
-
-#nav-menu ul li {
-    margin-bottom: 5px;
-}
-
-/* Link dalam menu navigasi */
-#nav-menu ul li a {
+.navbar li a {
+    color: white;
     text-decoration: none;
-    color: #333;
-    display: block;
-    padding: 8px 12px;
-    font-size: 14px;
-    font-weight: 500;
-    transition: background-color 0.3s, color 0.3s;
+    padding: 10px 15px;
+}
+
+.navbar li a:hover {
+    background-color: #333;
     border-radius: 5px;
 }
 
-/* Gaya hover pada link menu */
-#nav-menu ul li a:hover {
-    background-color: #005f73;
-    color: white;
-}
-
-/* Gaya untuk tombol toggle menu */
-#menu-toggle {
+/* Style untuk dropdown */
+.dropdown-content {
+    display: none;
     position: absolute;
-    top: 20px;
-    left: 20px;
-    cursor: pointer;
-    background-color: #005f73;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+.dropdown-content li a {
     color: white;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
-    transition: background-color 0.3s, transform 0.3s;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
 }
 
-/* Hover effect untuk tombol toggle */
-#menu-toggle:hover {
-    background-color: #007f7f;
-    transform: scale(1.05);
+.dropdown-content li a:hover {
+    background-color: #000;
 }
 
+/* Tampilkan dropdown saat di-hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
 /* Gaya untuk switch tema */
 .switch {
     position: absolute;
@@ -360,31 +346,59 @@ footer {
     font-size: 0.9rem;
 }
 
+#mobile-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+#mobile-menu span {
+    height: 5px;
+    width: 15px;
+    background: white;
+    margin: 1px 0;
+}
+
 @media (max-width: 768px) {
-/*nav menu untuk tampilan mobile*/   
-    #nav-menu {
-        top: 10px;
-        left: 10px;
-        width: 70px;
-        padding: 3px;
-    }
-
-    #nav-menu ul li a {
-        padding: 3px 6px;
-        font-size: 11px;
-    }
-
-    /* Gaya untuk tombol toggle menu */
-    #menu-toggle {
-        top: 5px;
-        left: 5px;
-        padding: 4px 6px;
-        font-size: 12px;
-    }
-    
     h1 {
-        font-size: 1.4rem;
-        margin-bottom: 0.5rem;
+        transform: translateX(0);
+    }
+
+    #mobile-menu {
+        display: flex;
+        align-items: center;
+        margin-left: 5px;
+        margin-top: -20px;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 25%;
+        background-color: #333;
+        padding: 10px 0;
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: white;
+        transition: all 0.3s ease;
     }
     
     .switch {
@@ -404,16 +418,16 @@ footer {
         bottom: 1.5px;
         left: 2px;
     }
-    /**/
+    
     .icon {
         font-size: 10px;
     }
-    /**/
+    
     .sun {
         left: 4px;
         top: 8px;
     }
-    /**/
+    
     .moon {
         right: 2px;
         top: 8px;
